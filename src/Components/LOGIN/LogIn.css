@@ -1,0 +1,137 @@
+/* LogIn.css */
+* {
+    box-sizing: border-box !important;
+}
+
+.log-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../IMAGES/signin_Bg.svg');
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+
+.logInContainer {
+    border-radius: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    width: 35%;
+}
+
+.log-in .logo {
+    width: 100%;
+    max-width: 6rem;
+    height: auto;
+}
+
+form.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+.logInContainer .login-form .theme-input-style {
+    background: white;
+    border: none;
+    border-bottom: 2px solid black;
+    margin: 15px;
+    padding: 12px 15px;
+    width: calc(100% - 30px);
+    color: #000;
+    height: 45px;
+}
+
+.theme-input-style::placeholder {
+    font-weight: 500;
+    color: #000;
+}
+
+.checkBoxLabel {
+    font-size: large;
+    font-weight: 400;
+}
+
+.checkBox {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.option {
+    color: rgb(8, 3, 3);
+    cursor: pointer;
+    margin-bottom: 1rem !important;
+}
+
+.option span {
+    color: rgb(255, 170, 0);
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logInContainer .form-group .logInBTN {
+    width: 200px;
+    height: 48px;
+    margin: 10px;
+    padding: 12px 15px;
+    background-color: white;
+    color: #faaa00;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: .3s all linear;
+    text-transform: capitalize;
+    z-index: 1;
+    position: relative;
+    font-size: 14px;
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-font-family: ;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-font-weight: 400;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-width: var(--bs-border-width);
+    --bs-btn-border-color: transparent;
+    --bs-btn-border-radius: var(--bs-border-radius);
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+    display: inline-block;
+    font-family: var(--bs-btn-font-family);
+    line-height: var(--bs-btn-line-height);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    user-select: none;
+}
+
+.logInContainer .form-group .logInBTN:hover {
+    background-color: #faaa00;
+    color: white;
+}
+
+.Toastify__toast--success {
+    background-color: green !important;
+    color: white !important;
+}
+
+.Toastify__toast--error {
+    background-color: rgba(212, 35, 35, 0.968) !important;
+    color: white !important;
+}

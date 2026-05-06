@@ -1,0 +1,162 @@
+/* 
+   Price Section - Clothiq LUXE Sync 
+   Inherits the iPhone-level aesthetic from Category.css
+*/
+
+#pricing {
+    padding: 100px 0;
+    background-color: var(--apple-gray);
+    /* Subtle section background */
+}
+
+/* Membership Luxe Cards */
+.plan-badge-area {
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff !important;
+}
+
+.membership-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+.plan-badge-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* High-End Metallic Tier Gradients */
+.silver-badge {
+    background: linear-gradient(145deg, #e0e0e0, #1a1a1a);
+    /* Brushed Titanium */
+}
+
+.gold-badge {
+    background: linear-gradient(145deg, #fbc02d, #f57f17, #e65100);
+    /* Luxury 24K Gold */
+}
+
+.platinum-badge {
+    background: linear-gradient(145deg, #2c2c2c, #050505, #1a1a1a);
+    /* Deep Obsidian/Onyx */
+    border-bottom: 2px solid var(--brand-yellow);
+}
+
+/* Luxury Content Details */
+.plan-card .post-content {
+    padding: 40px;
+}
+
+.plan-card .post-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 20px;
+}
+
+.plan-card .post-title h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.plan-card-price {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--brand-yellow);
+}
+
+/* Precise Feature List */
+.plan-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.plan-feature-item {
+    font-size: 1rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.plan-feature-item i {
+    color: var(--brand-yellow);
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+/* Luxury Tab Switcher */
+.price-nav-wrap {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-tabs {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    padding: 8px;
+    border-radius: 50px;
+    display: inline-flex;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.price--nav-item {
+    padding: 14px 50px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--text-secondary);
+    text-decoration: none !important;
+}
+
+.price--nav-item.active {
+    background: var(--luxury-black);
+    color: var(--pure-white);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Combo Card Consistency */
+.combo-price-tag {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: var(--brand-yellow);
+    color: var(--luxury-black);
+    padding: 10px 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+.plan-card .cat-view-more-button {
+    width: 100%;
+    text-align: center;
+    border-radius: 50px;
+}

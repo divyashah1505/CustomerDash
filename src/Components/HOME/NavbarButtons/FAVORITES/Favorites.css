@@ -1,0 +1,89 @@
+.favoritesContainer{
+    padding: 175px 0 96px;
+}
+
+.favoritesContainer .single-blog-inner{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fea900;
+    border-radius: 10px;
+    /* margin: 5px; */
+    overflow: hidden;
+}
+
+.favoritesContainer .single-blog-inner .post-image{
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 10px; */
+}
+
+.favoritesContainer .single-blog-inner .post-image img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.favoritesContainer .single-blog-inner .post-title h3{
+    /* margin-top: 5px; */
+    /* margin-bottom: 30px; */
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 36px;
+}
+
+.favoritesContainer .single-blog-inner .post-title h6{
+    margin-top: 5px;
+    color: #faaa00;
+}
+
+.favoritesContainer .single-blog-inner .post-content{
+    margin: 8px;
+}
+
+.favoritesContainer .single-blog-inner .post-details{
+    /* padding: 0 0 0 10px; */
+    border-top: 2px solid lightgray;
+    padding: 5px 15px 5px 15px;
+}
+
+.favoritesContainer .single-blog-inner .post-info{
+    margin-bottom: 0px;
+}
+
+.favoritesContainer .single-blog-inner .post-info span{
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+    line-height: 24px;
+}
+
+.favoritesContainer .single-blog-inner .rating-box p {
+    margin: 0;
+    color: black;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.favoritesContainer .single-blog-inner .rating-box {
+    position: absolute;
+    width: auto;
+    top: 5%;
+    left: 5%;
+    background: rgba(254, 170,0);
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.custom-row {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.margin-adjust {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 !important; /* Override Bootstrap padding if necessary */
+}

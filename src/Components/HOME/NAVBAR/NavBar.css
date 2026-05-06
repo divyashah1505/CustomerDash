@@ -1,0 +1,147 @@
+/* 
+   Clothiq LUXE NavBar - Glassmorphism & High-End Design
+*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 20px 0;
+}
+
+/* Glassmorphism Effect on Scroll */
+.header:not(.transparent-header) {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+    padding: 12px 0;
+}
+
+.navbar-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.05);
+}
+
+/* Premium Navigation Links */
+.header-menu ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarList a {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-primary) !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.navbarList a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--brand-yellow);
+    transition: width 0.3s ease;
+}
+
+.navbarList a:hover {
+    color: var(--brand-yellow) !important;
+}
+
+.navbarList a:hover::after {
+    width: 100%;
+}
+
+/* User Actions Area */
+.urgent-call {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: flex-end;
+}
+
+.user-greeting {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    background: var(--luxury-black);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: var(--transition-luxe);
+}
+
+.user-greeting:hover {
+    background: var(--brand-yellow);
+    color: var(--luxury-black);
+    transform: translateY(-2px);
+}
+
+.user-dialogue {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border-radius: 15px;
+    box-shadow: var(--shadow-premium);
+    padding: 15px;
+    min-width: 180px;
+    margin-top: 15px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.user-menu-item {
+    padding: 10px 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.user-menu-item:hover {
+    background: var(--apple-gray);
+    color: var(--brand-yellow);
+}
+
+/* Mobile Toggle - Hidden on Desktop */
+.menu-button {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .header-menu {
+        display: none; /* Add mobile drawer logic if needed */
+    }
+    
+    .navbar-container {
+        padding: 0 20px;
+    }
+}
